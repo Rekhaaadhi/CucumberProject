@@ -20,6 +20,27 @@ public class HomePagePojoClass extends BaseClass{
 	private WebElement linkNewBook;
 	@FindBy(partialLinkText="Coming")
 	private WebElement linkComingSn;
+	
+	@FindBy(className="basket-count")
+	private WebElement linkBasket;
+	
+	@FindBy(xpath="//button[contains(@class,'input-search-button')]")
+	private WebElement btnSearch;
+	
+	@FindBy(xpath="//input[@placeholder='Title, author, keyword or ISBN']")
+	private WebElement txtsearch;
+	
+	public WebElement getlinkBasket() {
+		return linkBasket;
+	}
+	public WebElement getbtnSearch() {
+		return btnSearch;
+	}
+	
+	public WebElement gettxtSearch() {
+		return txtsearch;
+	}
+	
 	public WebElement getBtnacceptCookie() {
 		return btnacceptCookie;
 	}

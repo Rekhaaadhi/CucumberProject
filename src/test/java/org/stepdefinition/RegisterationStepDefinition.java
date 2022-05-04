@@ -2,6 +2,7 @@ package org.stepdefinition;
 
 import java.awt.AWTException;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.poi.util.SystemOutLogger;
 import org.openqa.selenium.NoSuchElementException;
@@ -242,8 +243,8 @@ public class RegisterationStepDefinition extends BaseClass
 		}		
 	}
 	
-	@Then("User should be able to enter exactly {int}charecters without any error")
-	public void user_should_be_able_to_enter_exactly_charecters_without_any_error(Integer int1, io.cucumber.datatable.DataTable dt) throws AWTException {
+	@Then("User should be able to enter exactly {int} characters without any error")
+	public void user_should_be_able_to_enter_exactly_characters_without_any_error(Integer int1, io.cucumber.datatable.DataTable dt) throws AWTException {
 		List<String> validpassList = dt.asList();
 		int excep_count=0;
 		for(String validpass : validpassList)
@@ -251,8 +252,8 @@ public class RegisterationStepDefinition extends BaseClass
 			 fill(rp.getPswd(),validpass);
 			 performTab();
 			 try {
-				 String errormsg = rp.getPswd().getText();
-					if(errormsg.contains("enter a valid")) {
+				 String errormsg = rp.geterrPswd().getText();
+					if(errormsg.contains("must be 10 characters")) {
 						excep_count++;
 						System.out.println("Test case failed for the value : "+validpass);					
 						driver.navigate().refresh();					
@@ -275,6 +276,103 @@ public class RegisterationStepDefinition extends BaseClass
 			Assert.assertTrue(true);
 		}
 	    
+	}
+	
+	@Then("User should pass {int} charecters and gets error")
+	public void user_should_pass_charecters_and_gets_error(Integer int1, io.cucumber.datatable.DataTable dt) throws AWTException {
+		List<String> invalidpassList = dt.asList();
+		int excep_count=0;
+		for(String invalidpass : invalidpassList)
+		{
+			 fill(rp.getPswd(),invalidpass);
+			 performTab();
+			 try {
+				 String errormsg = rp.geterrPswd().getText();
+					if(errormsg.contains("must be 10 characters")) {
+						
+						System.out.println("Test case passed for the value : "+invalidpass);					
+						driver.navigate().refresh();					
+					 }
+					
+			 }
+			 catch(NoSuchElementException e)
+			 {   
+				 excep_count++;
+				 System.out.println("Test case failed for the value :"+invalidpass);
+				 driver.navigate().refresh();
+			 }
+			 
+		}
+		if(excep_count>0)
+		{
+			Assert.assertTrue(false);
+		}
+		else
+		{
+			Assert.assertTrue(true);
+		}
+	   
+	}
+	
+	@Then("User should pass the same value both in password and confirmpassword field wihtout any error")
+	public void user_should_pass_the_same_value_both_in_password_and_confirmpassword_field_wihtout_any_error(io.cucumber.datatable.DataTable dt) throws AWTException {
+	   Map<String,String> mp = dt.asMap(String.class, String.class);
+	   int excep_count=0;
+	   fill(rp.getPswd(),mp.get("pass"));
+	   fill(rp.getConfmPswd(),mp.get("confirmPass"));
+	   performTab();
+	   try {
+		   String errmsg = rp.geterrCfmPswd().getText();
+		   if(errmsg.contains("does not match"))
+		   {   
+			   excep_count++;
+			   System.out.println("Test case failed for same values");
+		   }
+	   }
+	   catch(NoSuchElementException e)
+	   {
+		   System.out.println("Test case passed for same values");
+	   }
+	   if(excep_count>0)
+		{
+			Assert.assertTrue(false);
+		}
+		else
+		{
+			Assert.assertTrue(true);
+		}
+	   
+	}
+	
+	@Then("User should pass the diff value both in password and confirmpassword field and gets error")
+	public void user_should_pass_the_diff_value_both_in_password_and_confirmpassword_field_and_gets_error(io.cucumber.datatable.DataTable dt) throws AWTException {
+	   
+		Map<String,String> mp = dt.asMap(String.class, String.class);
+		   int excep_count=0;
+		   fill(rp.getPswd(),mp.get("pass"));
+		   fill(rp.getConfmPswd(),mp.get("confirmPass"));
+		   performTab();
+		   try {
+			   String errmsg = rp.geterrCfmPswd().getText();
+			   if(errmsg.contains("does not match"))
+			   {   
+				  
+				   System.out.println("Test case passed for different values");
+			   }
+		   }
+		   catch(NoSuchElementException e)
+		   {   
+			   excep_count++;
+			   System.out.println("Test case failed for different values");
+		   }
+		   if(excep_count>0)
+			{
+				Assert.assertTrue(false);
+			}
+			else
+			{
+				Assert.assertTrue(true);
+			}
 	}
 }
 

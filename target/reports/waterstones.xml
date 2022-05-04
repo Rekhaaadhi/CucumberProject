@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="9" time="149.079527">
+<testcase classname="To validate Register functionality of Waterstones.com page" name="Verify user is able to navigate to Registration page" time="16.768762">
+<system-out><![CDATA[Given User should launch the chrome and load the url and maximize...........passed
+When User should click on the Signin-Register link..........................passed
+And User should click on the CREATE NEW ACCOUNT link........................passed
+And User should click on the Register button in siginpage...................passed
+Then User should be navigated to the Registraion page.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate Register functionality of Waterstones.com page" name="Verify user is able to pass any value in the Firstname textbox" time="15.806484">
+<system-out><![CDATA[Given User should launch the chrome and load the url and maximize...........passed
+When User should click on the Signin-Register link..........................passed
+And User should click on the CREATE NEW ACCOUNT link........................passed
+And User should click on the Register button in siginpage...................passed
+Then User should be able enter values "" to the firstname text box without any error.passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate Register functionality of Waterstones.com page" name="Verify user is able to pass any value in the Firstname textbox 2" time="15.471798">
+<system-out><![CDATA[Given User should launch the chrome and load the url and maximize...........passed
+When User should click on the Signin-Register link..........................passed
+And User should click on the CREATE NEW ACCOUNT link........................passed
+And User should click on the Register button in siginpage...................passed
+Then User should be able enter values "@#$" to the firstname text box without any error.passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate Register functionality of Waterstones.com page" name="Verify user is able to pass any value in the Firstname textbox 3" time="14.604836">
+<system-out><![CDATA[Given User should launch the chrome and load the url and maximize...........passed
+When User should click on the Signin-Register link..........................passed
+And User should click on the CREATE NEW ACCOUNT link........................passed
+And User should click on the Register button in siginpage...................passed
+Then User should be able enter values "123" to the firstname text box without any error.passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate Register functionality of Waterstones.com page" name="Verify user is able to pass any value in the Firstname textbox 4" time="14.95526">
+<system-out><![CDATA[Given User should launch the chrome and load the url and maximize...........passed
+When User should click on the Signin-Register link..........................passed
+And User should click on the CREATE NEW ACCOUNT link........................passed
+And User should click on the Register button in siginpage...................passed
+Then User should be able enter values "abc" to the firstname text box without any error.passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate Register functionality of Waterstones.com page" name="Verify user is able to pass any value in the Firstname textbox 5" time="15.081611">
+<system-out><![CDATA[Given User should launch the chrome and load the url and maximize...........passed
+When User should click on the Signin-Register link..........................passed
+And User should click on the CREATE NEW ACCOUNT link........................passed
+And User should click on the Register button in siginpage...................passed
+Then User should be able enter values "a" to the firstname text box without any error.passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate Register functionality of Waterstones.com page" name="Verify user is able to pass any value in the Firstname textbox 6" time="14.848024">
+<system-out><![CDATA[Given User should launch the chrome and load the url and maximize...........passed
+When User should click on the Signin-Register link..........................passed
+And User should click on the CREATE NEW ACCOUNT link........................passed
+And User should click on the Register button in siginpage...................passed
+Then User should be able enter values "1" to the firstname text box without any error.passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate Register functionality of Waterstones.com page" name="Verify the user able to pass invalid email addresses" time="22.935443">
+<system-out><![CDATA[Given User should launch the chrome and load the url and maximize...........passed
+When User should click on the Signin-Register link..........................passed
+And User should click on the CREATE NEW ACCOUNT link........................passed
+And User should click on the Register button in siginpage...................passed
+Then User should pass the invalid email ids and gets error message..........passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate Search functionality of Waterstones.com page" name="Verify user is able to pass the values to the Search textbox and click search button" time="18.607309">
+<system-out><![CDATA[Given User should launch the chrome and load the url and maximize...........passed
+And User should pass the value to the search text box.......................passed
+And User should click search button.........................................passed
+Then User should be navigated to the search url.............................passed
+]]></system-out>
+</testcase>
+</testsuite>

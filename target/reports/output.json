@@ -1,0 +1,1021 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3166645500,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User should launch the chrome and load the url and maximize",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_launch_the_chrome_and_load_the_url_and_maximize()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 403748400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User should click on the Signin-Register link",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_click_on_the_Signin_Register_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-04T09:57:22.964Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5856393800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooksClass.beforeScenario()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Verify user is able to navigate to Registration page",
+        "description": "",
+        "id": "to-validate-register-functionality-of-waterstones.com-page;verify-user-is-able-to-navigate-to-registration-page",
+        "after": [
+          {
+            "result": {
+              "duration": 973589800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooksClass.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4671755800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should click on the CREATE NEW ACCOUNT link",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_click_on_the_CREATE_NEW_ACCOUNT_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1660995300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User should click on the Register button in siginpage",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_click_on_the_Register_button_in_siginpage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10122400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User should be navigated to the Registraion page",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_be_navigated_to_the_Registraion_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3136738500,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User should launch the chrome and load the url and maximize",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_launch_the_chrome_and_load_the_url_and_maximize()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 451726700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User should click on the Signin-Register link",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_click_on_the_Signin_Register_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-04T09:57:39.740Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4509732500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooksClass.beforeScenario()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Verify user is able to pass any value in the Firstname textbox",
+        "description": "",
+        "id": "to-validate-register-functionality-of-waterstones.com-page;verify-user-is-able-to-pass-any-value-in-the-firstname-textbox;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 881380100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooksClass.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4614859100,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User should click on the CREATE NEW ACCOUNT link",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_click_on_the_CREATE_NEW_ACCOUNT_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1920103200,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User should click on the Register button in siginpage",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_click_on_the_Register_button_in_siginpage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 282813100,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User should be able enter values \"\" to the firstname text box without any error",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 33
+                }
+              ],
+              "location": "RegisterationStepDefinition.user_should_be_able_enter_values_to_the_firstname_text_box_without_any_error(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3111713100,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User should launch the chrome and load the url and maximize",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_launch_the_chrome_and_load_the_url_and_maximize()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 423606900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User should click on the Signin-Register link",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_click_on_the_Signin_Register_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-04T09:57:55.548Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4660412000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooksClass.beforeScenario()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "Verify user is able to pass any value in the Firstname textbox",
+        "description": "",
+        "id": "to-validate-register-functionality-of-waterstones.com-page;verify-user-is-able-to-pass-any-value-in-the-firstname-textbox;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 884125000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooksClass.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4512589300,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User should click on the CREATE NEW ACCOUNT link",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_click_on_the_CREATE_NEW_ACCOUNT_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1726365700,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User should click on the Register button in siginpage",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_click_on_the_Register_button_in_siginpage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 149766700,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User should be able enter values \"@#$\" to the firstname text box without any error",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"@#$\"",
+                  "offset": 33
+                }
+              ],
+              "location": "RegisterationStepDefinition.user_should_be_able_enter_values_to_the_firstname_text_box_without_any_error(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3112757100,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User should launch the chrome and load the url and maximize",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_launch_the_chrome_and_load_the_url_and_maximize()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 459214300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User should click on the Signin-Register link",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_click_on_the_Signin_Register_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-04T09:58:11.020Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3688549400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooksClass.beforeScenario()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "Verify user is able to pass any value in the Firstname textbox",
+        "description": "",
+        "id": "to-validate-register-functionality-of-waterstones.com-page;verify-user-is-able-to-pass-any-value-in-the-firstname-textbox;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 889636100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooksClass.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4472055200,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User should click on the CREATE NEW ACCOUNT link",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_click_on_the_CREATE_NEW_ACCOUNT_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1827683100,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User should click on the Register button in siginpage",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_click_on_the_Register_button_in_siginpage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 151731300,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User should be able enter values \"123\" to the firstname text box without any error",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123\"",
+                  "offset": 33
+                }
+              ],
+              "location": "RegisterationStepDefinition.user_should_be_able_enter_values_to_the_firstname_text_box_without_any_error(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3123148700,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User should launch the chrome and load the url and maximize",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_launch_the_chrome_and_load_the_url_and_maximize()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 440303800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User should click on the Signin-Register link",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_click_on_the_Signin_Register_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-04T09:58:25.625Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4987109200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooksClass.beforeScenario()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "Verify user is able to pass any value in the Firstname textbox",
+        "description": "",
+        "id": "to-validate-register-functionality-of-waterstones.com-page;verify-user-is-able-to-pass-any-value-in-the-firstname-textbox;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 812488600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooksClass.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3850260400,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User should click on the CREATE NEW ACCOUNT link",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_click_on_the_CREATE_NEW_ACCOUNT_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1632751900,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User should click on the Register button in siginpage",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_click_on_the_Register_button_in_siginpage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 106988400,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User should be able enter values \"abc\" to the firstname text box without any error",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abc\"",
+                  "offset": 33
+                }
+              ],
+              "location": "RegisterationStepDefinition.user_should_be_able_enter_values_to_the_firstname_text_box_without_any_error(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3113882300,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User should launch the chrome and load the url and maximize",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_launch_the_chrome_and_load_the_url_and_maximize()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 446813500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User should click on the Signin-Register link",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_click_on_the_Signin_Register_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-04T09:58:40.581Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5114371800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooksClass.beforeScenario()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Verify user is able to pass any value in the Firstname textbox",
+        "description": "",
+        "id": "to-validate-register-functionality-of-waterstones.com-page;verify-user-is-able-to-pass-any-value-in-the-firstname-textbox;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 935057200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooksClass.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3722495900,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User should click on the CREATE NEW ACCOUNT link",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_click_on_the_CREATE_NEW_ACCOUNT_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1616386300,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User should click on the Register button in siginpage",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_click_on_the_Register_button_in_siginpage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 130476000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User should be able enter values \"a\" to the firstname text box without any error",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a\"",
+                  "offset": 33
+                }
+              ],
+              "location": "RegisterationStepDefinition.user_should_be_able_enter_values_to_the_firstname_text_box_without_any_error(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3120166200,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User should launch the chrome and load the url and maximize",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_launch_the_chrome_and_load_the_url_and_maximize()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 460615500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User should click on the Signin-Register link",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_click_on_the_Signin_Register_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-04T09:58:55.663Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4471829200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooksClass.beforeScenario()"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "Verify user is able to pass any value in the Firstname textbox",
+        "description": "",
+        "id": "to-validate-register-functionality-of-waterstones.com-page;verify-user-is-able-to-pass-any-value-in-the-firstname-textbox;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 864720300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooksClass.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4012719000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User should click on the CREATE NEW ACCOUNT link",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_click_on_the_CREATE_NEW_ACCOUNT_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1780218100,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User should click on the Register button in siginpage",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_click_on_the_Register_button_in_siginpage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 134923500,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User should be able enter values \"1\" to the firstname text box without any error",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 33
+                }
+              ],
+              "location": "RegisterationStepDefinition.user_should_be_able_enter_values_to_the_firstname_text_box_without_any_error(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3106502700,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User should launch the chrome and load the url and maximize",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_launch_the_chrome_and_load_the_url_and_maximize()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 424266100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User should click on the Signin-Register link",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_click_on_the_Signin_Register_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-04T09:59:10.515Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4665917900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooksClass.beforeScenario()"
+            }
+          }
+        ],
+        "line": 67,
+        "name": "Verify the user able to pass invalid email addresses",
+        "description": "",
+        "id": "to-validate-register-functionality-of-waterstones.com-page;verify-the-user-able-to-pass-invalid-email-addresses",
+        "after": [
+          {
+            "result": {
+              "duration": 994493800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooksClass.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3645485500,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "User should click on the CREATE NEW ACCOUNT link",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_click_on_the_CREATE_NEW_ACCOUNT_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1661683400,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "User should click on the Register button in siginpage",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_click_on_the_Register_button_in_siginpage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8434349900,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "User should pass the invalid email ids and gets error message",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_pass_the_invalid_email_ids_and_gets_error_message(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "@drft@gmail.com",
+                  "ert   123  @ty.yh",
+                  "123.234@co",
+                  "@@@@.@@co",
+                  "@yahoo.in",
+                  "uhj#$87@a.co"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "To validate Register functionality of Waterstones.com page",
+    "description": "",
+    "id": "to-validate-register-functionality-of-waterstones.com-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeatureFiles/register.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-05-04T09:59:33.452Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3876433400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooksClass.beforeScenario()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Verify user is able to pass the values to the Search textbox and click search button",
+        "description": "",
+        "id": "to-validate-search-functionality-of-waterstones.com-page;verify-user-is-able-to-pass-the-values-to-the-search-textbox-and-click-search-button",
+        "after": [
+          {
+            "result": {
+              "duration": 906224900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooksClass.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3139161700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User should launch the chrome and load the url and maximize",
+            "match": {
+              "location": "RegisterationStepDefinition.user_should_launch_the_chrome_and_load_the_url_and_maximize()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3169725200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should pass the value to the search text box",
+            "match": {
+              "location": "ProductSearchStepDefinition.user_should_pass_the_value_to_the_search_text_box(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "You can win"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4496936000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should click search button",
+            "match": {
+              "location": "ProductSearchStepDefinition.user_should_click_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3013289400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should be navigated to the search url",
+            "match": {
+              "location": "ProductSearchStepDefinition.user_should_be_navigated_to_the_search_url()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "To validate Search functionality of Waterstones.com page",
+    "description": "",
+    "id": "to-validate-search-functionality-of-waterstones.com-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeatureFiles/search.feature",
+    "tags": []
+  }
+]

@@ -236,7 +236,7 @@ public class BaseClass {
 	{
 		TakesScreenshot t = (TakesScreenshot)driver;
 		File src = t.getScreenshotAs(OutputType.FILE);
-		File des = new File("E:\\testing_programs\\CucumberProject\\target\\screenshots"+name+".png");
+		File des = new File("E:\\testing_programs\\CucumberProject\\target\\screenshots\\"+name+".png");
 		FileUtils.copyFile(src, des);
 		
 	}

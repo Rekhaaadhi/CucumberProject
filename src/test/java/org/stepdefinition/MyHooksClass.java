@@ -4,6 +4,7 @@ import java.io.IOException;
 
 
 import org.utilities.BaseClass;
+import org.utilities.JVMReport;
 
 import io.cucumber.core.api.Scenario;
 import io.cucumber.java.After;
@@ -22,10 +23,8 @@ public class MyHooksClass extends BaseClass{
 	public void afterScenario(Scenario s) throws IOException
 	{
 		String name = s.getName();
-		//System.out.println("name : "+name);
-		String fileName = name.replace(" ","_");
-		//System.out.println("filename :" +fileName);
-		screenshot("fileName");
+		String fileName = name.replace(" ","_");		
+		screenshot(fileName);
 		toQuit();
 		
 	}

@@ -39,6 +39,21 @@ public class RegisterPagePojo extends BaseClass{
 	@FindBy(id="registerEmail-error")
 	private WebElement errEmail;
 	
+	@FindBy(id="registerPassword-error")
+	private WebElement errPswd;
+	
+	@FindBy(id="confirmPassword-error")
+	private WebElement errCfmPswd;
+	
+	public WebElement geterrCfmPswd() {
+		return errCfmPswd         ;
+	}
+	
+	public WebElement geterrPswd() {
+		return errPswd;
+	}
+	
+	
 	public WebElement geterrEmail() {
 		return errEmail;
 	}
